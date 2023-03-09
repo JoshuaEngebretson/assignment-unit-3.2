@@ -21,6 +21,7 @@ for (let i=0; i<6; i++) {
 }
 /*
 Another version with only utilizing the numbers in question
+We would need to change i<4 to i<=5
 */
 console.log('Here is another version of 1.a. that only includes the numbers in question');
 for (let i=0; i<=5; i++) {
@@ -41,6 +42,9 @@ for (let i=3; i<6; i++) {
 }
 /*
 Another version with only utilizing the numbers in question
+We would need to change i=0 to i=3
+and
+We would need to change i<4 to i<=5
 */
 console.log('Here is another version of 1.b. that only includes the numbers in question');
 for (let i=3; i<=5; i++) {
@@ -62,12 +66,19 @@ for (let i=2; i<11; i+=2) {
 }
 /*
 Another version with only utilizing the numbers in question
+We would need to change i=0 to i=2
+and
+We would need to change i<4 to i<=10
+and 
+We would need to change i++ to i+=2 (This can be completely optional in the below code, as even if we incremented with i++ it would still only log the even numbers)
+Then
+We would need to include an if statement to check if i remainder 2 is equal to 0 then console log i
 */
 console.log('Here is another version of 1.c. that only includes the numbers in question (and plays with remainder to find if even)');
 for (let i=2; i<=10; i+=2) {
   if (i%2 === 0) { 
     console.log(i);
-  } //This checks if i is divided by 2 and the remainder is 0, then if would log the initial value of i.
+  } //This checks if i is divided by 2 and the remainder is 0, then if would log the current value of i.
     //We could use this to instead increment 1 at a time or 3 at a time and still consistely only log the even numbers.
 }
 
